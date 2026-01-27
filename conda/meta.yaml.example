@@ -1,4 +1,4 @@
-{% set name = "plugify-plugin-s2sdk" %}
+{% set name = "plugify-plugin-s2fix" %}
 {% set version = "REPLACE_VERSION" %}
 
 package:
@@ -25,14 +25,14 @@ requirements:
 
 test:
   commands:
-    - test -f $PREFIX/bin/libplugify-plugin-s2sdk.so  # [linux]
+    - test -f $PREFIX/bin/libplugify-plugin-s2fix.so  # [linux]
     - test -f $PREFIX/gamedata.jsonc                  # [linux]
     - test -f $PREFIX/settings.jsonc                  # [linux]
-    - test -f $PREFIX/plugify-plugin-s2sdk.pplugin    # [linux]
-    - if not exist %PREFIX%\\bin\\plugify-plugin-s2sdk.dll exit 1  # [win]
+    - test -f $PREFIX/plugify-plugin-s2fix.pplugin    # [linux]
+    - if not exist %PREFIX%\\bin\\plugify-plugin-s2fix.dll exit 1  # [win]
     - if not exist %PREFIX%\\gamedata.jsonc exit 1                 # [win]
     - if not exist %PREFIX%\\settings.jsonc exit 1                 # [win]
-    - if not exist %PREFIX%\\plugify-plugin-s2sdk.pplugin exit 1   # [win]
+    - if not exist %PREFIX%\\plugify-plugin-s2fix.pplugin exit 1   # [win]
 
 about:
   home: https://github.com/{{ environ.get('GITHUB_REPOSITORY', 'your-org/your-repo') }}

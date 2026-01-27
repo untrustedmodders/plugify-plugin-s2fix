@@ -64,18 +64,18 @@ string(TOUPPER "${PROJECT_NAME_SUBSTRING}" PROJECT_NAME_UPPER)
 #
 # Plugufy
 #
-add_subdirectory(external/configs)
+#add_subdirectory(external/configs)
 
 #
 # Dynlibutils
 #
-add_subdirectory(external/dynlibutils)
+#add_subdirectory(external/dynlibutils)
 
 #
 # Maps
 #
-add_subdirectory(external/parallel-hashmap)
-include_directories(external/parallel-hashmap)
+#add_subdirectory(external/parallel-hashmap)
+#include_directories(external/parallel-hashmap)
 
 #
 # V8
@@ -194,7 +194,7 @@ elseif(MACOS)
     set_target_properties(${PROJECT_NAME} PROPERTIES OSX_ARCHITECTURES "x86_64")
 endif()
 
-target_link_libraries(${PROJECT_NAME} PRIVATE sourcesdk plugify-plugin-configs cpp-memory_utils v8_monolith)
+target_link_libraries(${PROJECT_NAME} PRIVATE sourcesdk v8_monolith) #plugify-plugin-configs cpp-memory_utils
 
 if(MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /W4 /WX /Zc:preprocessor $<$<CONFIG:Release>:/Zi>)
@@ -222,7 +222,6 @@ if(NOT COMPILER_SUPPORTS_FORMAT)
     #target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt-header-only)
 endif()
 
-#[[
 configure_file(
         ${CMAKE_CURRENT_SOURCE_DIR}/plugify-plugin-s2fix.pplugin.in
         ${CMAKE_CURRENT_BINARY_DIR}/plugify-plugin-s2fix.pplugin
@@ -239,4 +238,3 @@ configure_file(
         ${CMAKE_CURRENT_BINARY_DIR}/settings.jsonc
         COPYONLY
 )
-]]

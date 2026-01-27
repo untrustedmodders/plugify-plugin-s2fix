@@ -34,5 +34,3 @@
 //#include <regex>
 
 namespace fs = std::filesystem;
-
-#include "stl.hpp"

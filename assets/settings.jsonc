@@ -1,8 +1,2 @@
 {
-  // Fixes flashing of the alert message (ONLY CS2)
-  "FixFlashAlertMessage": true,
-  // Fixes the players not showing up in the server browser
-  "FixServerListPlayer": true,
-  // Fixes load MOTD & server website button in tab
-  "FixLoadMotd": true
 }
