@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/untrustedmodders/plugify/refs/heads/main/schemas/plugin.schema.json",
+  "version": "${S2FIX_VERSION}",
+  "name": "${S2FIX_PACKAGE}",
+  "description": "Provides fixes for other plugins from Source 2 engine",
+  "author": "untrustedmodders",
+  "website": "https://github.com/untrustedmodders/",
+  "license": "GPLv3",
+  "entry": "bin/plugify-plugin-s2fix",
+  "platforms": [],
+  "language": "cpp",
+  "dependencies": [
+    {
+      "name": "configs"
+    },
+    {
+      "name": "polyhook"
+    },
+    {
+      "name": "s2sdk"
+    }
+  ],
+  "methods": [
+  ]
+}

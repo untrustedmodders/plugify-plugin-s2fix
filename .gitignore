@@ -1,0 +1,23 @@
+# IDEs
+.idea
+.vs
+.vscode
+.PVS-Studio
+
+# CMake
+CMakeUserPresets.json
+
+# Build results
+/build
+obj/
+bin/
+out/
+
+# Resource
+/res
+
+# vcpkg
+/vcpkg_installed
+/vcpkg.json
+/vcpkg-configuration.json
+/cmake-build-debug
