@@ -1,12 +1,12 @@
 #include "plugin.hpp"
 
 Source2Fix g_fix;
-EXPOSE_PLUGIN(PLUGIN_API, Source2Fix, &g_fix)
+PLUGIFY_PLUGIN(PLUGIN_API, &g_fix)
 
-void Source2Fix::OnPluginStart() {
+plg::PluginResult Source2Fix::OnPluginStart() {
 
 }
 
-void Source2Fix::OnPluginEnd() {
+plg::PluginResult Source2Fix::OnPluginEnd() {
 
 }
