@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/untrustedmodders/plugify-plugin-s2fix/compare/v1.0.0...v1.0.1) (2026-05-25)
+
+
+### Bug Fixes
+
+* add scopes check ([18ef3e0](https://github.com/untrustedmodders/plugify-plugin-s2fix/commit/18ef3e0a7cb3b6adf0545fb68d88b1204a944d9f))
+* remove unused ([96cedc9](https://github.com/untrustedmodders/plugify-plugin-s2fix/commit/96cedc9e8e52f11b03e253533a2ca05113bbd460))
+* update for new plugify ([2e2e392](https://github.com/untrustedmodders/plugify-plugin-s2fix/commit/2e2e392256ad60a3d0d812a0ce0698eda19dc10a))
+* update plugify ([06cd0b1](https://github.com/untrustedmodders/plugify-plugin-s2fix/commit/06cd0b19bd8bf310a3aad10c6f06c95cf0ed31c8))
+
 ## [2.3.21](https://github.com/untrustedmodders/plugify-plugin-s2sdk/compare/v2.3.20...v2.3.21) (2026-01-03)
 
 
